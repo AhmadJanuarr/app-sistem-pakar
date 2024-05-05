@@ -44,6 +44,8 @@ improve user understanding of website creation and chicken diseases.
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-- [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+- PHP
+- Bootstrap
+- MySql
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
