@@ -1,0 +1,7 @@
+Pasien
+Username = ahmad
+Password = 12345678
+
+Admin
+Username = admin
+Password = admin12345

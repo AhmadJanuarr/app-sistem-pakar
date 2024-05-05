@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.kiri {
+  margin: 1%;
+  margin-top: auto;
+  width: 15%;
+  height: auto;
+  border-radius: 5px 5px 5px 5px;
+  float: left;
+}
+
+.kanan {
+  margin: 1%;
+  margin-top: auto;
+  width: 75%;
+  height: auto;
+  float: left;
+}
+
+.logo {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-content: center;
+}
+
+.teks {
+  font-size: medium;
+}
+
+#tess {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.isi {
+  text-align: center;
+  padding: 10px;
+  color: #4183d7;
+}
+.isi:hover {
+  background-color: rgb(35, 87, 155);
+  color: #ffff;
+}
+
+.sidebar-heading {
+  color: #ffff;
+  background-color: #4183d7;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.nav-link {
+  text-align: left;
+}
+
+.isi:hover a {
+  background-color: rgb(35, 87, 155);
+  color: #ffff;
+}
+
+.content {
+  padding: 20px 80px;
+  text-align: justify;
+}
+
+.btn-red {
+  background-color: red;
+  border: 0px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-purple:hover {
+  background: #1a12fd;
+  border: 0px;
+}
+
+.heroBWA {
+  padding-top: 70px;
+  padding-bottom: 200px;
+}
+
+.heroBWA h1 {
+  font-weight: 700;
+  color: #2f281e;
+}
+
+.heroBWA p {
+  font-weight: 400;
+  color: #2f281e;
+}
+.heading {
+  font-size: 4em;
+}
+.sub-heading {
+  font-size: 3em;
+}
+
+.navbar {
+  margin-top: 15px;
+}
+.card {
+  border: none;
+}
+.card-title h1 {
+  font-weight: 700;
+  color: #2f281e;
+}
+.card-register {
+  width: 50%;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #bcd0e5;
+  border-radius: 5px;
+}
+.col label {
+  font-weight: 400;
+  color: #2f281e;
+}
+
+.btn-login {
+  background-color: transparent;
+  border: 1px solid #bcd0e5;
+  border-radius: 10px;
+  color: black;
+  margin: 20px 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.btn-register {
+  border-radius: 10px;
+  margin: 20px 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.btn-primary {
+  background: #9490ff50;
+  border: none;
+  color: #4541af;
+  border-radius: 10px;
+}
+.margin-top {
+  margin-top: 6em;
+}
+
+.card-title {
+  font-weight: bolder;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+  .card-deck {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .btn-primary,
+  .btn-secondary,
+  .card {
+    margin-top: 10px;
+    margin-left: 0 !important;
+  }
+}
