@@ -1,22 +1,3 @@
-<a name="readme-top"></a>
-
-<br />
-<div align="center">
-  <a href="https://github.com/AhmadJanuar1">
-    <img src="gambar/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Best-README-Template</h3>
-
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/AhmadJanuar1"><strong>Explore the docs »</strong></a>
-    <br />
-</div>
-
-<!-- ABOUT THE PROJECT -->
-
 ## About The Project
 
 <div align="center" id="top">
