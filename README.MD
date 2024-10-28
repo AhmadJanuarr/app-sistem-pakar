@@ -26,7 +26,15 @@ Sistem ini menyediakan panduan penanganan yang tepat terhadap penyakit yang didi
 
 ## Konfigurasi
 
---- **Segera Datang**
+#### Pasien
+
+- Username = ara
+- Password = 12345678
+
+#### Admin
+
+- Username = admin
+- Password = admin12345
 
 ## 🚀 Features
 
