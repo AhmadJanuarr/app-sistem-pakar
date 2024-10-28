@@ -1,27 +1,18 @@
-## About The Project
+## Tampilan awal
 
 <div align="center" id="top">
   <img src="gambar/instagram.png" width="900" alt="Profile Readme Generator" />
-
 </div>
 
-Chicken disease is one of the problems often faced by chicken farmers. To diagnose
-chicken disease, farmers need to recognize the symptoms that appear in chickens and consult with experts.
-However, this requires quite a lot of time and money.
-
-Therefore, this research aims to developing a web-based expert system that can help farmers in diagnosing chicken diseases
-quickly and easily. This expert system uses the Forward Chaining method to determine chicken diseases
-based on symptoms entered by the user.
-
-This expert system was developed using language PHP programming and MySQL database. This expert system also provides appropriate handling guidance
-diagnosed disease. This expert system was tested using 33 symptoms and 10 common chicken diseases
-happen. The test results show that this expert system can diagnose chicken diseases with high accuracy
-high and provides diagnosis results directly via a web browser. This expert system can also
-improve user understanding of website creation and chicken diseases.
+## Tentang 
+<p>Penyakit ayam merupakan salah satu permasalahan yang sering dihadapi oleh peternak ayam. Untuk mendiagnosis penyakit ayam, peternak perlu mengenali gejala-gejala yang muncul pada ayam dan berkonsultasi dengan ahlinya.
+Namun, hal tersebut membutuhkan waktu dan biaya yang cukup banyak.</p>
+<p>Oleh karena itu, penelitian ini bertujuan untuk mengembangkan sistem pakar berbasis web yang dapat membantu peternak dalam mendiagnosis penyakit ayam secara cepat dan mudah. ​​Sistem pakar ini menggunakan metode Forward Chaining untuk menentukan penyakit ayam berdasarkan gejala yang dimasukkan oleh pengguna.</p>
+<p>Sistem pakar ini dikembangkan menggunakan bahasa pemrograman PHP dan database MySQL. Sistem pakar ini juga menyediakan panduan penanganan yang tepat terhadap penyakit yang didiagnosis. Sistem pakar ini diuji menggunakan 33 gejala dan 10 penyakit ayam yang umum terjadi. Hasil pengujian menunjukkan bahwa sistem pakar ini dapat mendiagnosis penyakit ayam dengan akurasi yang tinggi dan memberikan hasil diagnosis secara langsung melalui web browser. Sistem pakar ini juga dapat meningkatkan pemahaman pengguna terhadap pembuatan website dan penyakit ayam.</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Built With
+### teknologi yang di pakai
 
 - PHP
 - Bootstrap
