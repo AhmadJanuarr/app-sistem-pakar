@@ -4,4 +4,4 @@ Password = 12345678
 
 Admin
 Username = admin
-Password = admin12345
+Password = 12345678

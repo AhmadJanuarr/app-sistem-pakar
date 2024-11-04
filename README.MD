@@ -34,7 +34,7 @@ Sistem ini menyediakan panduan penanganan yang tepat terhadap penyakit yang didi
 #### Admin
 
 - Username = admin
-- Password = admin12345
+- Password = 12345678
 
 ## 🚀 Features
 
