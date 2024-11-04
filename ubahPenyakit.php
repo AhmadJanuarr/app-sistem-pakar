@@ -25,7 +25,8 @@ $penyakit = mysqli_fetch_assoc($queryPenyakit);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Admin</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -75,10 +76,12 @@ $penyakit = mysqli_fetch_assoc($queryPenyakit);
                     <h1 class="h3 mb-0">Ubah Data Penyakit</h1>
                 </div>
                 <div class="card-body">
-                    <form action="function.php?act=ubahPenyakit&id_penyakit=<?= $penyakit['id_penyakit']; ?>" id="ubah" method="POST">
+                    <form action="function.php?act=ubahPenyakit&id_penyakit=<?= $penyakit['id_penyakit']; ?>" id="ubah"
+                        method="POST">
                         <div class="form-group">
                             <label for="namaPenyakit">Nama Penyakit</label>
-                            <input type="text" class="form-control" id="namaPenyakit" name="namaPenyakit" value="<?= $penyakit['penyakit']; ?>">
+                            <input type="text" class="form-control" id="namaPenyakit" name="namaPenyakit"
+                                value="<?= $penyakit['penyakit']; ?>">
                         </div>
                         <input type="submit" name="ubah_btn" id="ubah" class="btn btn-primary btn-block" value="Ubah">
                     </form>
