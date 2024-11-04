@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Nov 01, 2023 at 03:56 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Host: localhost:3306
+-- Generation Time: Nov 04, 2024 at 05:53 PM
+-- Server version: 8.0.30
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,9 +28,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `gejala` (
-  `id_gejala` int(11) NOT NULL,
+  `id_gejala` int NOT NULL,
   `gejala` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `gejala`
@@ -78,9 +78,9 @@ INSERT INTO `gejala` (`id_gejala`, `gejala`) VALUES
 --
 
 CREATE TABLE `penyakit` (
-  `id_penyakit` int(11) NOT NULL,
+  `id_penyakit` int NOT NULL,
   `penyakit` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `penyakit`
@@ -106,10 +106,10 @@ INSERT INTO `penyakit` (`id_penyakit`, `penyakit`) VALUES
 --
 
 CREATE TABLE `relasi` (
-  `id_relasi` int(11) NOT NULL,
-  `id_gejala` int(11) DEFAULT NULL,
-  `id_penyakit` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+  `id_relasi` int NOT NULL,
+  `id_gejala` int DEFAULT NULL,
+  `id_penyakit` int DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `relasi`
@@ -180,11 +180,11 @@ INSERT INTO `relasi` (`id_relasi`, `id_gejala`, `id_penyakit`) VALUES
 --
 
 CREATE TABLE `solusi` (
-  `id_solusi` int(11) NOT NULL,
-  `id_penyakit` int(11) NOT NULL,
+  `id_solusi` int NOT NULL,
+  `id_penyakit` int NOT NULL,
   `deskripsi` varchar(255) NOT NULL,
   `solusi` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `solusi`
@@ -210,21 +210,22 @@ INSERT INTO `solusi` (`id_solusi`, `id_penyakit`, `deskripsi`, `solusi`) VALUES
 --
 
 CREATE TABLE `user` (
-  `id_user` int(11) NOT NULL,
-  `role` int(11) NOT NULL,
+  `id_user` int NOT NULL,
+  `role` int NOT NULL,
   `nama` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `alamat` varchar(100) NOT NULL,
   `tgl_lahir` date NOT NULL,
   `password` varchar(300) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id_user`, `role`, `nama`, `email`, `alamat`, `tgl_lahir`, `password`) VALUES
-(2, 0, 'admin', 'admin@gmail.com', 'Tabanan', '2020-04-17', '$2y$10$ASS50col3niwOOku4Zkky.HpmF18hiPWL9pi2DnE8CS7jTDSD4ufe');
+(1, 0, 'admin', 'admin@gmail.com', 'globaladmin', '2002-11-13', '$2y$10$613SNaOJ54XMnxLe2tyOj.enn1v4xgzJQlIHZ86.YA25GEVwggTAa'),
+(11, 1, 'ara', 'ara13@gmail.com', 'Tangerang', '2000-10-13', '$2y$10$613SNaOJ54XMnxLe2tyOj.enn1v4xgzJQlIHZ86.YA25GEVwggTAa');
 
 --
 -- Indexes for dumped tables
@@ -271,31 +272,31 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `gejala`
 --
 ALTER TABLE `gejala`
-  MODIFY `id_gejala` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id_gejala` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `penyakit`
 --
 ALTER TABLE `penyakit`
-  MODIFY `id_penyakit` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_penyakit` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `relasi`
 --
 ALTER TABLE `relasi`
-  MODIFY `id_relasi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
+  MODIFY `id_relasi` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT for table `solusi`
 --
 ALTER TABLE `solusi`
-  MODIFY `id_solusi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_solusi` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_user` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Constraints for dumped tables
