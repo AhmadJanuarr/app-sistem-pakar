@@ -111,39 +111,38 @@ function login()
     $nama = htmlspecialchars($_POST["nama"]);
     $input_pass = htmlspecialchars($_POST['password']);
     var_dump($nama, $input_pass);
-    $query = mysqli_query($koneksi, "SELECT * FROM user where nama = '$nama'");
-    $data = mysqli_fetch_assoc($query);
 
-    $password = $data['password'];
-    $role = $data['role'];
+    $query = mysqli_query($koneksi, "SELECT * FROM user WHERE nama = '$nama'");
 
-    if ($data) {
+    if ($data = mysqli_fetch_assoc($query)) {
+        $password = $data['password'];
+        $role = $data['role'];
 
         if (password_verify($input_pass, $password)) {
             if ($role == "1") {
                 $_SESSION['role'] = 1;
-                echo "<script>
-                document.location.href = 'test.php';
-                </script>";
+                echo "<script>document.location.href = 'test.php';</script>";
             } elseif ($role == "0") {
                 $_SESSION['role'] = 0;
-                echo "<script>
-                document.location.href = 'indexAdmin.php';
-                </script>";
+                echo "<script>document.location.href = 'indexAdmin.php';</script>";
             } elseif ($role == "2") {
                 $_SESSION['role'] = 2;
-                echo "<script>
-                document.location.href = 'indexAdmin.php';
-                </script>";
+                echo "<script>document.location.href = 'indexAdmin.php';</script>";
             }
+        } else {
+            echo "<script>
+                alert('Password salah!');
+                document.location.href = 'index.php';
+                </script>";
         }
     } else {
         echo "<script>
-                alert('Username atau password kosong/salah!');
-                document.location.href = 'index.php';
-                </script>";
+            alert('Username tidak ditemukan.');
+            document.location.href = 'index.php';
+            </script>";
     }
 }
+
 
 function tambahGejala()
 {
