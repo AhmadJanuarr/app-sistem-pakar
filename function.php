@@ -76,7 +76,6 @@ function register()
     if (!$exe) {
         die('Query Error : ' . mysqli_errno($koneksi) . '-' . mysqli_error($koneksi));
     } else {
-        // echo "<script type='text/javascript'> success(); </script>";
         echo "<script>
         alert('Berhasil Registrasi! Silahkan Login');
         document.location.href = 'index.php';
@@ -111,7 +110,7 @@ function login()
     global $koneksi;
     $nama = htmlspecialchars($_POST["nama"]);
     $input_pass = htmlspecialchars($_POST['password']);
-    // var_dump($nama, $input_pass);
+    var_dump($nama, $input_pass);
     $query = mysqli_query($koneksi, "SELECT * FROM user where nama = '$nama'");
     $data = mysqli_fetch_assoc($query);
 

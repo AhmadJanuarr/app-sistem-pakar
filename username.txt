@@ -1,5 +1,5 @@
 Pasien
-Username = ahmad
+Username = ara
 Password = 12345678
 
 Admin
