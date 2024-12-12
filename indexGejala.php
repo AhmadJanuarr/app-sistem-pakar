@@ -36,7 +36,8 @@ $solusi = mysqli_fetch_assoc($jumlahSolusi);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Admin</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -96,8 +97,10 @@ $solusi = mysqli_fetch_assoc($jumlahSolusi);
                         <div class="card-body">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Data Users</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $pasien['jml_pasien']; ?></div>
+                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Data Users
+                                    </div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $pasien['jml_pasien']; ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -110,8 +113,10 @@ $solusi = mysqli_fetch_assoc($jumlahSolusi);
                         <div class="card-body">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Data Penyakit</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $penyakit['jml_penyakit']; ?></div>
+                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Data Penyakit
+                                    </div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                        <?= $penyakit['jml_penyakit']; ?></div>
                                 </div>
                             </div>
                         </div>
@@ -123,8 +128,10 @@ $solusi = mysqli_fetch_assoc($jumlahSolusi);
                         <div class="card-body">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Data Gejala</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $gejala['jml_gejala']; ?></div>
+                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Data Gejala
+                                    </div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $gejala['jml_gejala']; ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -136,8 +143,10 @@ $solusi = mysqli_fetch_assoc($jumlahSolusi);
                         <div class="card-body">
                             <div class="row no-gutters align-items-center">
                                 <div class="col mr-2">
-                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Data Solusi</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $solusi['jml_solusi']; ?></div>
+                                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Data Solusi
+                                    </div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><?= $solusi['jml_solusi']; ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -161,15 +170,18 @@ $solusi = mysqli_fetch_assoc($jumlahSolusi);
                                 </thead>
                                 <tbody>
                                     <?php while ($data = mysqli_fetch_assoc($queryGejala)) { ?>
-                                        <tr>
+                                    <tr>
 
-                                            <td class="text-center"><?= $data['id_gejala']; ?></td>
-                                            <td><?= $data['gejala']; ?></td>
-                                            <td class="text-center">
-                                                <a class="btn btn-primary p-1" href="ubahGejala.php?id_gejala=<?php echo $data["id_gejala"]; ?>">edit</a>
-                                                <a href="function.php?act=hapusGejala&id_gejala=<?= $data['id_gejala']; ?>" onclick="return confirm('Yakin ingin menghapus data?');" class="btn btn-danger p-1">hapus</a>
-                                            </td>
-                                        </tr>
+                                        <td class="text-center"><?= $data['id_gejala']; ?></td>
+                                        <td><?= $data['gejala']; ?></td>
+                                        <td class="text-center">
+                                            <a class="btn btn-primary p-1"
+                                                href="ubahGejala.php?id_gejala=<?php echo $data["id_gejala"]; ?>">edit</a>
+                                            <a href="function.php?act=hapusGejala&id_gejala=<?= $data['id_gejala']; ?>"
+                                                onclick="return confirm('Yakin ingin menghapus data?');"
+                                                class="btn btn-danger p-1">hapus</a>
+                                        </td>
+                                    </tr>
                                     <?php } ?>
                                 </tbody>
                                 <a href="tambahGejala.php" class="btn btn-primary my-2 px-2">Tambah Data Gejala</a>

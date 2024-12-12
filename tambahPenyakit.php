@@ -25,7 +25,8 @@ if (isset($_SESSION['role'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Admin</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -78,10 +79,12 @@ if (isset($_SESSION['role'])) {
                     <form action="function.php?act=tambahPenyakit" id="tambah" method="POST">
                         <div class="form-group">
                             <label for="namaPenyakit">Penyakit</label>
-                            <input type="text" class="form-control" id="namaPenyakit" name="namaPenyakit" placeholder="Masukkan penyakit">
+                            <input type="text" class="form-control" id="namaPenyakit" name="namaPenyakit"
+                                placeholder="Masukkan penyakit">
                         </div>
                         <!-- Other form fields here -->
-                        <input type="submit" name="tambah_btn" id="tambah" class="btn btn-primary btn-block" value="Tambah">
+                        <input type="submit" name="tambah_btn" id="tambah" class="btn btn-primary btn-block"
+                            value="Tambah">
                     </form>
                 </div>
             </div>

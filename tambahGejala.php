@@ -23,7 +23,8 @@ $queryPenyakit = mysqli_query($koneksi, "SELECT * FROM penyakit");
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard Admin</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap" rel="stylesheet" />
 </head>
 
@@ -81,23 +82,25 @@ $queryPenyakit = mysqli_query($koneksi, "SELECT * FROM penyakit");
                             <form action="function.php?act=tambahGejala" id="tambah" method="POST">
                                 <div class="form-group">
                                     <label for="namaGejala">Gejala</label>
-                                    <input type="text" class="form-control" id="namaGejala" name="namaGejala" placeholder="Masukkan gejala">
+                                    <input type="text" class="form-control" id="namaGejala" name="namaGejala"
+                                        placeholder="Masukkan gejala">
                                 </div>
                                 <div class="form-group">
                                     <label for="id_penyakit">Nama Penyakit</label>
                                     <select name="id_penyakit" id="id_penyakit" class="form-control">
                                         <option value="">Pilih Penyakit dari Gejala</option>
                                         <?php while ($penyakit = mysqli_fetch_assoc($queryPenyakit)) { ?>
-                                            <option value="<?= $penyakit["id_penyakit"]; ?>"><?= $penyakit["penyakit"]; ?></option>
+                                        <option value="<?= $penyakit["id_penyakit"]; ?>"><?= $penyakit["penyakit"]; ?>
+                                        </option>
                                         <?php } ?>
                                     </select>
                                 </div>
-                                <input type="submit" name="tambah_btn" id="tambah" class="btn btn-primary btn-block" value="Tambah">
+                                <input type="submit" name="tambah_btn" id="tambah" class="btn btn-primary btn-block"
+                                    value="Tambah">
                             </form>
                         </div>
                     </div>
                 </div>
-
 </body>
 
 </html>

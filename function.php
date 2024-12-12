@@ -1,5 +1,6 @@
 <?php
-$koneksi = mysqli_connect('localhost', 'root', '', 'spk_ayam');
+// sesuaikan dengan konfigurasi server database kalian
+$koneksi = mysqli_connect('localhost', 'root', '130102', 'spk_ayam');
 
 if (mysqli_connect_errno()) {
     echo "Koneksi Database Gagal : " . mysqli_connect_error();
@@ -142,7 +143,6 @@ function login()
             </script>";
     }
 }
-
 
 function tambahGejala()
 {
