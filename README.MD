@@ -37,7 +37,15 @@ Sistem ini menyediakan panduan penanganan yang tepat terhadap penyakit yang didi
 - Password = 12345678
 
 ## 🚀 Features
+- [x] **Diagnosa**
 
+  - [x] Tambah Gejala
+  - [x] Tambah Penyakit
+  - [x] Tambah Solusi
+  - [x] Edit Gejala
+  - [x] Edit Penyakit
+  - [x] Edit Solusi
+  
 - [x] **Authentication**
 
   - [x] Register
