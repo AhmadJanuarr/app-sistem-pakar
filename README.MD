@@ -85,4 +85,18 @@ Kontribusi untuk pengembangan lebih lanjut sangat terbuka! Berikut cara Anda dap
 - Push ke branch (`git push origin fitur-anda`).
 - Ajukan Pull Request.
 
+## ❤️ Dukungan dan Donasi
+
+Jika Anda merasa sistem ini bermanfaat dan ingin mendukung pengembangan lebih lanjut, Anda dapat memberikan donasi melalui platform berikut:
+
+- ![Saweria](https://img.shields.io/badge/-Saweria-orange?style=flat-square&logo=sawe&logoColor=white) [Klik di sini](https://saweria.co/AhmadJanuar)
+- ![PayPal](https://img.shields.io/badge/-PayPal-blue?style=flat-square&logo=paypal&logoColor=white) [Klik di sini](https://paypal.me/ahmadjanuar)
+- ![Dana](https://img.shields.io/badge/-Dana-blue?style=flat-square&logo=dana&logoColor=white)  
+  **Nomor HP**: 089630507889 
+  **Atas Nama**: Ahmad Januar Amri
+
+Setiap dukungan yang Anda berikan akan sangat membantu untuk pengembangan proyek ini lebih lanjut. Terima kasih atas dukungannya! 😊
+****
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
