@@ -1,10 +1,8 @@
 # Sistem Pakar Diagnosa Penyakit Ayam
 
 <div align="center" id="top">
-  <img src="gambar/instagram.png" width="900" alt="Profile Readme Generator" />
+  <img src="gambar/demo/landing-page.png" width="900" alt="Landing Page" />
 </div>
-
----
 
 ## 📖 Tentang
 
@@ -18,15 +16,41 @@ Sistem ini menyediakan panduan penanganan yang tepat terhadap penyakit yang didi
 
 ---
 
+## Demo App
+
+<div align="center" id="top">
+  <figure>
+    <img src="gambar/demo/dashboard-admin.png" width="900" alt="Halaman Dashboard" />
+    <figcaption>Halaman Dashboard</figcaption>
+  </figure>
+  ---
+  <figure>
+  <img src="gambar/demo/gejala-admin.png" width="900" alt="Halaman Gejala" />
+    <figcaption>Halaman Gejala</figcaption>
+  </figure>
+  ---
+  <figure>
+  <img src="gambar/demo/penyaktit-admin.png" width="900" alt="Halaman Penyakit" />
+    <figcaption>Halaman Penyakit</figcaption>
+  </figure>
+  ---
+    <figure>
+  <img src="gambar/demo/solusi-admin.png" width="900" alt="Halaman Solusi" />
+    <figcaption>Halaman Solusi</figcaption>
+  </figure>
+</div>
+
+---
+
 ## 🛠️ Teknologi yang Digunakan
 
-- **PHP** - Backend development
+- **PHP** - Web development
 - **Bootstrap** - Responsive design
 - **MySQL** - Database management
 
 ## Konfigurasi
 
-#### Pasien
+#### Dummy User
 
 - Username = ara
 - Password = 12345678
@@ -72,8 +96,8 @@ Sistem ini menyediakan panduan penanganan yang tepat terhadap penyakit yang didi
 
 ## 🔗 Link Pendukung
 
-- **Documentasi API** - Tautan ke documentasi API, jika ada
-- **Database Diagram** - Tautan ke diagram database, jika ada
+- **Documentasi API** - Tautan ke documentasi API
+- **Database Diagram** - Tautan ke diagram database
 
 ## 👤 Kontribusi
 
