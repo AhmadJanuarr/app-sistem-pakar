@@ -11,19 +11,8 @@ if (isset($_SESSION['role'])) {
 }
 
 $gejala = mysqli_query($koneksi, "SELECT * FROM gejala");
+include 'includes/public/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <link rel="shortcut icon" href="gambar/icon.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <link rel="stylesheet" href="styles.css">
-    <title>AyamSehat.</title>
-</head>
 
 <body>
     <nav class="navbar py-2 navbar-expand-lg navbar-light">
@@ -35,7 +24,6 @@ $gejala = mysqli_query($koneksi, "SELECT * FROM gejala");
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li>
@@ -156,8 +144,6 @@ $gejala = mysqli_query($koneksi, "SELECT * FROM gejala");
                                             }
                                             return  $kode;
                                         }
-
-
                                         $id_penyakit = maximum($_SESSION['avianEncephalomyelitis'], $_SESSION['alvianInfluenza'], $_SESSION['cacarUnggas'], $_SESSION['eggDropSyndrome'], $_SESSION['inclusionBodyHepatitis'], $_SESSION['infectiousBronchitis'], $_SESSION['infectiousBursalDisease'], $_SESSION['infectiousLaryngoTracheitis'], $_SESSION['marekDisease'], $_SESSION['newcastleDisease'], $_SESSION['viralArthritis']);
                                         $query = "SELECT * FROM solusi WHERE id_penyakit = '$id_penyakit'";
                                         $data = mysqli_query($koneksi, $query);
