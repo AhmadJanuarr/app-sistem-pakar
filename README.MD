@@ -21,22 +21,22 @@ Sistem ini menyediakan panduan penanganan yang tepat terhadap penyakit yang didi
 <div align="center" id="top">
   <figure>
     <img src="gambar/demo/dashboard-admin.png" width="900" alt="Halaman Dashboard" />
-    <figcaption>Halaman Dashboard</figcaption>
+    <figcaption>---Halaman Dashboard---</figcaption>
   </figure>
-  ---
+  
   <figure>
   <img src="gambar/demo/gejala-admin.png" width="900" alt="Halaman Gejala" />
-    <figcaption>Halaman Gejala</figcaption>
+    <figcaption>---Halaman Gejala---</figcaption>
   </figure>
-  ---
+  
   <figure>
-  <img src="gambar/demo/penyaktit-admin.png" width="900" alt="Halaman Penyakit" />
-    <figcaption>Halaman Penyakit</figcaption>
+  <img src="gambar/demo/penyakit-admin.png" width="900" alt="Halaman Penyakit" />
+    <figcaption>---Halaman Penyakit---</figcaption>
   </figure>
-  ---
-    <figure>
+  
+  <figure>
   <img src="gambar/demo/solusi-admin.png" width="900" alt="Halaman Solusi" />
-    <figcaption>Halaman Solusi</figcaption>
+    <figcaption>---Halaman Solusi---</figcaption>
   </figure>
 </div>
 
