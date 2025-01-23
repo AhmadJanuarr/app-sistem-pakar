@@ -125,10 +125,10 @@ function login()
                 echo "<script>document.location.href = 'test.php';</script>";
             } elseif ($role == "0") {
                 $_SESSION['role'] = 0;
-                echo "<script>document.location.href = 'indexAdmin.php';</script>";
+                echo "<script>document.location.href = 'indexUser.php';</script>";
             } elseif ($role == "2") {
                 $_SESSION['role'] = 2;
-                echo "<script>document.location.href = 'indexAdmin.php';</script>";
+                echo "<script>document.location.href = 'indexUser.php';</script>";
             }
         } else {
             echo "<script>
@@ -273,7 +273,7 @@ function ubahPasien($id_user)
     }
     echo "<script>
             alert('Data Pasien berhasil diubah!');
-            document.location.href = 'indexAdmin.php'</script>";
+            document.location.href = 'indexUser.php'</script>";
 }
 
 function ubahPakar($id_user)
@@ -327,14 +327,14 @@ function hapusPasien($id_user)
         echo "
         <script>
                 alert('Akun Pasien berhasil dihapus!');
-                document.location.href = 'indexAdmin.php';
+                document.location.href = 'indexUser.php';
             </script>	
         ";
     } else {
         echo "
         <script>
                     alert('Akun Pasien gagal dihapus!');
-                    document.location.href = 'indexAdmin.php';
+                    document.location.href = 'indexUser.php';
             </script>	
         ";
     }
