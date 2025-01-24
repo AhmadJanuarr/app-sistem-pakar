@@ -155,7 +155,7 @@ html {
   background: #00d25b50;
   border: none;
   color: #00d25b;
-  border-radius: full;
+  border-radius: 10px;
 }
 .margin-top {
   margin-top: 6em;
