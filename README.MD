@@ -38,6 +38,11 @@ Sistem ini menyediakan panduan penanganan yang tepat terhadap penyakit yang didi
   <img src="gambar/demo/solusi-admin.png" width="900" alt="Halaman Solusi" />
     <figcaption>---Halaman Solusi---</figcaption>
   </figure>
+
+  <figure>
+  <img src="gambar/demo/result.png" width="900" alt="Halaman Result" />
+    <figcaption>---Halaman Result---</figcaption>
+  </figure>
 </div>
 
 ---
