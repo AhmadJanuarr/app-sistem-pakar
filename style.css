@@ -151,6 +151,12 @@ html {
   color: #4541af;
   border-radius: 10px;
 }
+.btn-success {
+  background: #00d25b50;
+  border: none;
+  color: #00d25b;
+  border-radius: full;
+}
 .margin-top {
   margin-top: 6em;
 }
