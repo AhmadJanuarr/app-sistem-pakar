@@ -18,7 +18,7 @@ include 'includes/public/header.php';
     <nav class="navbar py-2 navbar-expand-lg navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <h2>Ternah Ayam.</h2>
+                <h2>Ternak Ayam.</h2>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
